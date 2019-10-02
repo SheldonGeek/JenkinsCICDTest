@@ -16,7 +16,6 @@ from pyspark.ml import *
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
-
 # COMMAND ----------
 
 # DBTITLE 1,Define Schema
@@ -38,7 +37,7 @@ damagedSensorReadings = spark.read.schema(schema).csv("/windturbines/csv/D*gz").
 healthySensorReadings = spark.read.schema(schema).csv("/windturbines/csv/H*gz").drop("TORQUE").drop("SPEED")
 
 damagedSensorReadings.cache()
-healthySensorReadings.cache()
+
 
 # COMMAND ----------
 
