@@ -28,6 +28,7 @@ schema = StructType([ \
     StructField("AN8", DoubleType(), False), \
     StructField("AN9", DoubleType(), False), \
     StructField("AN10", DoubleType(), False)  # , \
+                     
 ])
 
 # COMMAND ----------
